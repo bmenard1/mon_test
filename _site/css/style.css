@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: white;
+    color: #3499ff; <!-- white; -->
 }
 
 p {
@@ -480,8 +480,8 @@ footer p {
 .coneimg {
 /*    position: absolute;*/
 	position:relative;
-    left: 0%;
-    width: 100%;
+    left: 10%;
+    width: 80%;
 /*    content: url('../img/sdss_cone_notext.png');*/
 }
 
@@ -612,7 +612,7 @@ cursor: pointer;
     }
     #scroller .innerScrollArea {
         overflow: hidden;
-        position: absolute;
+        position: relative;
         left: 0;
         right: 0;
         top: 0;
@@ -627,6 +627,6 @@ cursor: pointer;
         padding: 0;
         margin: 0;
         list-style-type: none;
-        position: absolute;
+        position: relative;
     }
 </style>

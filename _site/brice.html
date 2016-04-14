@@ -40,8 +40,8 @@
                         <img src="img/play.png" id="youtube">
                     </a>
                 </h1>
-                <p id="title" class="animated fadeInUp">Into The Deep Sky</p>
-                <p id='subtitle'  class="animated fadeInUp">Click play to see the structure of the night sky beyond the sensitivity of your eyes...</p>
+                <p id="title" class="animated fadeInUp">Deep into the Sky</p>
+                <p id='subtitle'  class="animated fadeInUp">See the night sky beyond the sensitivity of your eyes...</p>
             </div>
         </div>
     </div>
@@ -80,17 +80,19 @@
     <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6'>
         <h2>Details</h2>
         <p>
-            Did the movie contain too much detail to quickly?  Here you can find some key frames from the movie with 
-            details on what is going on during each era of the movie that you can experience at your own speed.
-            Click the left and right arrows or swipe to move forward and backwards though the slideshow.</p>
+
+        In this movie, you saw many layers of the sky, as if we were flipping through the pages of a book. Now let's look again at some important steps of the story. Click the right arrow or swipe to move though the slideshow all the way to the Big Bang.</p>
         </div>
     </div>
 </div>
     
+
+
+
 <div class="owl-carousel owl-theme">
     <div class='item'>
         <img src="img/frames/01_citystars.jpg" />
-        <p class='leftarrow'>Towards to our Galaxy</p>
+        <p class='leftarrow'></p>
         <p class='rightarrow'>Towards the Big Bang</p>
     
     </div>
@@ -108,32 +110,28 @@
 </section>
 
 
-<div class='row'>
-</div>
+<br>
+<br>
+<br>
+<br>
+
 
 <section id="cone">
 <div class='row'>
     <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6'>
-        <h2>Another View</h2>
-        <p>Additionally, we can look at the universe not as a movie flipping though individual pages of a book, but in as a cone
-            that visualizes a thin slice of the universe from the big bang (top) to today (bottom) where each semi-circular ring shows a different age of the universe.
+        <h2>Visualizing the Universe</h2>
+        <p>This is a slice of the Universe showing all the objects astronomers have observed in it. We are located at the bottom.
+        The top shows the edge of the observable Universe, where the first flash of light, the cosmic microwave background, was emitted 13.7 billion years ago.
+<!--        because light takes some time to travel and reach us, it means we can see how the Universe looked when it was much younger. This movie takes us on a time travel all the way to the first flash of light that occurred just after the Big Bang, 13.7 billion years ago.
+
+        Additionally, we can look at the universe not as a movie flipping though individual pages of a book, but in as a cone
+            that visualizes a thin slice of the universe from the big bang (top) to today (bottom) where each semi-circular ring shows a different age of the universe.-->
             Click to see a larger version of the image.
         </p>
         </div>
     </div>
 </div>
 
-
-
-<div id="scroller" style="width: 550px; height: 400px; margin: 0 auto;">
-    <div class="innerScrollArea">
-        <ul>
-            <!-- Define photos here -->
-            <li><img src="img/background_large.png" height="400" /></li>
-<!--            <li><img src="img/background_large.png" width="600" height="400" /></li> -->
-        </ul>
-    </div>
-</div>
 
 
 
@@ -151,13 +149,53 @@
 </div>
 
 
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<section id="cone">
+<div class='row'>
+    <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6'>
+        <h2>Visualizing the Universe</h2>
+        <p>This figure shows another type of cut through the observable Universe.
+        </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container">
+    <div class='row'>
+
+    <div id="scroller" style="width: 1000px; height: 300px>  <!-- ; margin: 0 auto;">
+        <div class="innerScrollArea"> 
+<!--            <ul> -->
+                <!-- Define photos here -->
+                <li><img src="img/background_large.png" height="400" witdh="3200" /></li>
+<!--            <li><img src="img/background_large.png" width="600" height="400" /></li> -->
+<!--            </ul>-->
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+
 <section id="information">
 <div class='row'>
     <div class='col-xs-12'>
     <div class='col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10  col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8'>
-        <h2>Questions</h2>
+        <h2></h2>
         <p>
-            Answers to some frequently asked questions about the movie and website. Click each to learn more.
+            <!-- Answers to some frequently asked questions about the movie and website. Click each to learn more. -->
         </p>
         </div>
     </div>
@@ -192,7 +230,7 @@
                 <!-- <p>Who made this visualization and the data they used...</p> -->
                 <ul class="infoexpand">
                     <li>
-                        This visualization was created by <a href='//ajmendez.github.io'>Alexander Mendez</a> and <a href='//www.pha.jhu.edu/~menard/'>Brice Menard</a>
+                        This visualization was created by <a href='//ajmendez.github.io'>Alexander Mendez</a> and <a href='//www.pha.jhu.edu/~menard/'>Brice Ménard</a>
                         <br /> <div class='jhulogoimg'><img src='img/jhu.png' /></div>
                     </li>
                 
@@ -282,7 +320,7 @@
         var viewportW = scroller.width();
 
         // Scrolling speed management
-        var controller = {curSpeed:0, fullSpeed:2};
+        var controller = {curSpeed:0, fullSpeed:1};
         var $controller = $(controller);
         var tweenToNewSpeed = function(newSpeed, duration)
         {
