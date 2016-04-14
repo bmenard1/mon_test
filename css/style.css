@@ -176,7 +176,7 @@ footer p {
 
 #intro {
     height:100%;
-/*    height: calc(100% - 50px);*/
+    /*height: calc(100% - 50px);*/
 /*    height: -o-calc(100% - 50px); /* opera */*/
 /*    height: -webkit-calc(100% - 50px); /* google, safari */*/
 /*    height: -moz-calc(100% - 50px); /* firefox */*/
@@ -184,19 +184,26 @@ footer p {
 
 .hero {
 /*    background: url(../img/hero-bg2.jpg) no-repeat center center ;*/
-    background: url(../img/bg_stripe.png) no-repeat center center ;
+/*    background: url(../img/bg_stripe.png) no-repeat center center ; */
+    background: url(../img/welcome2.jpeg) no-repeat center center ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 /*    background-color: transparent;*/
-    width:100%;
+    position:relative;
+    left: 10%;
+    width: 80%;
+    /*left:10%;*/
+    /*width:90%;*/
     display:table;
 /*      z-index:-1;*/
 }
 .hero-align {
     display: table-cell;
-    vertical-align:middle;
+    /*vertical-align:middle;*/
+    /*top:60%;*/
+    padding-top:12%
 }
 .hero-content {
     display: inline-block;
@@ -480,8 +487,8 @@ footer p {
 .coneimg {
 /*    position: absolute;*/
 	position:relative;
-    left: 10%;
-    width: 80%;
+    left: 7%;
+    width: 86%;
 /*    content: url('../img/sdss_cone_notext.png');*/
 }
 
@@ -600,7 +607,7 @@ cursor: pointer;
 
 
 .col-lg-offset-15 {
-    margin-left:12.5%;
+    margin-left:5%;
 }
 
 
