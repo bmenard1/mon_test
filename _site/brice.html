@@ -17,7 +17,8 @@
     <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css" />
 	<link rel="stylesheet" type="text/css" href="css/nivo-lightbox-theme/default/default.css" />
     <link rel="stylesheet" type="text/css" href="css/nivo-lightbox.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
 </head>
@@ -34,14 +35,14 @@
     <!--<div id="particles"><canvas class="particles-canvas" style="width: 100%; height: 100%;"></canvas></div> -->
     <div class="row">
         <div class="text-center">
-            <div class="animatedParent">
-                <p id="title" class="animated fadeInDown">Deep into the Sky</p>
-                <h1 class="animated fadeInDown">
+            <div class="animatedParent animateOnce">
+                <p id="title" class='animated fadeInDown slow'>Deep into the Sky</p>
+                <h1 class="animated growIn slowest delay-1000">
                     <a id="movie" href="https://www.youtube.com/watch?v=Pbd2cUskwBg&amp;autoplay=1&amp;rel=0&amp;modestbranding=1&amp;showinfo=0&amp;cc_load_policy=1&amp;cc=1&amp;hl=en&amp;cc_lang_pref=en">
                         <img src="img/play.png" id="youtube">
                     </a>
                 </h1>
-            <p id='subtitle'  class="animated fadeInDown">See the night sky beyond the sensitivity of your eyes...</p>
+            <p id='subtitle'  class="animated fadeInUp slower">See the night sky beyond the sensitivity of your eyes...</p>
             </div>
         </div>
     </div>
@@ -74,13 +75,18 @@
 </nav>
 <!-- /Navigation -->  
 
+<br>
+<br>
+<br>
+<br>
 
 <section id="about">
 <div class='row'>
     <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6'>
-        <h2>Description</h2>
-        <p>
-
+        <div class='animatedParent animateOnce'>
+            <h2 class='animated bounceInLeft'>Description</h2>
+        </div>
+        <p align="justify">
         The movie shows many layers of the sky, as if we were flipping through the pages of a book. Now let's pause at the main chapters and take the time to look at some fascinating pictures. The slideshow below will take you all the way to the Big Bang. Click the right arrow or swipe to start.</p>
         </div>
     </div>
@@ -119,11 +125,13 @@
 <section id="cone">
 <div class='row'>
     <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6'>
-        <h2>Visualizing the Universe</h2>
+        <div class='animatedParent animateOnce'>
+            <h2 class='animated bounceInLeft'>Visualizing the Universe</h2>
         </div>
+    </div>
+</div>
 
 <div class='container'>
-
         <div class='col-xs-12 col-sm-12 col-md-12 conediv'>
             
             <a class='conebox' href="img/sdss_cone_notext.png" title='A slice of the observable Universe'>
@@ -138,13 +146,12 @@
 
    <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6'>
  
-        <p>This is a slice of the Universe showing all the objects astronomers have observed in it. We are located at the bottom.
-        The top shows the edge of the observable Universe, where the first flash of light, the cosmic microwave background, was emitted 13.7 billion years ago.
+        <p align="justify">This is a slice of the Universe. We are located at the bottom. The top shows the edge of the observable Universe where the first flash of light, the cosmic microwave background, was emitted 13.7 billion years ago. In between, astronomers have detected millions of galaxies.
 <!--        because light takes some time to travel and reach us, it means we can see how the Universe looked when it was much younger. This movie takes us on a time travel all the way to the first flash of light that occurred just after the Big Bang, 13.7 billion years ago.
 
         Additionally, we can look at the universe not as a movie flipping though individual pages of a book, but in as a cone
             that visualizes a thin slice of the universe from the big bang (top) to today (bottom) where each semi-circular ring shows a different age of the universe.-->
-            Click to see a larger version of the image.
+            <!-- Click to see a larger version of the image. -->
         </p>
 
 
@@ -154,16 +161,8 @@
 
 
 
-
-    
-<div class='container'>
-    <div class='row'>
-   </div>
-</div>
-
-
-
-
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -173,7 +172,7 @@
 
 <div class='row'>
     <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6'>
-        <p>This view shows another type of cut through the observable Universe and takes us all the way back to the time of the Big Bang.
+        <p align="justify">The view below shows another type of cut through the observable Universe. Scroll to the right to go all the way back to the time of the Big Bang.
         </p>
         </div>
     </div>
@@ -184,8 +183,9 @@
 
 <div class="container">
     <div class='row'>
-
     <div id="scroller" style="width: 90%; height: 300px; margin:0 auto;">
+    <!-- <p align="center">&larr; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rarr;</p> -->
+    <p align="right">&rarr;</p>
         <div class="innerScrollArea"> 
 <!--            <ul> -->
                 <!-- Define photos here -->
@@ -206,49 +206,59 @@
 
 
 
-<section id="information">
+<!--
 <div class='row'>
     <div class='col-xs-12'>
-    <!-- <div class='col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10  col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8'> -->
-    <div class='col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10  col-md-offset-2 col-md-10 col-lg-offset-2 col-lg-8'>
-        <h2></h2>
+    <div class='col-xs-offset-1 col-xs-10  col-sm-offset-1 col-sm-10  col-md-offset-1 col-md-8 col-lg-offset-1 col-lg-6'>
+    <div class='col-sm-offset-3 col-sm-10'>
+        <h2>test</h2>
         <p>
-            <!-- Answers to some frequently asked questions about the movie and website. Click each to learn more. -->
         </p>
         </div>
     </div>
-    <div class='infolinks'>
+-->    
+
+<section id="information">
+<div class='infolinks'>
         <ul class='row'>
 
-
-
             <!-- <li class="infoheader col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-4 col-lg-offset-15 col-lg-3"> -->
-            <li class="infoheader col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-4 col-lg-offset-1 col-lg-3">
-                <h3 id='contact'>Credits</h3>
-                <!-- <p>Who made this visualization and the data they used...</p> -->
+            <li class="infoheader col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-3">
+                <h3 align='right' id='contact'>Authors & Credits &nbsp;&nbsp;&nbsp;&nbsp;</h3>
                 <ul class="infoexpand">
-                    <li>
-                        This visualization was created by <a href='//ajmendez.github.io'>Alexander Mendez</a> and <a href='//www.pha.jhu.edu/~menard/'>Brice Ménard</a>
-                        <br /> <div class='jhulogoimg'><img src='img/jhu.png' /></div>
+                    <li><p align='justify'>
+                        This visualization was created by
+                        <a href='//ajmendez.github.io'>Alexander Mendez</a> and <a href='//www.pha.jhu.edu/~menard/'>Brice Ménard</a>, astrophysicists at <a href='//www.pha.jhu.edu/'>Johns Hopkins University.</a>
+                        
+                    </p>
                     </li>
                 
-                    <li>
-                        Data for galaxies and quasars from the <a href="//www.sdss.org">Sloan Digital Sky Survey (SDSS)</a>. 
+                    <li><p align='justify'>
+                        Data for galaxies and quasars are from the <a href="//www.sdss.org">Sloan Digital Sky Survey (SDSS)</a>. 
                         The cosmic microwave background image was obtained by the <a href='//www.esa.int/Our_Activities/Space_Science/Planck/Planck_and_the_cosmic_microwave_background'>Planck satellite</a>. 
-                        Click on the links for more information.
+                        <br>
+                        <br />Click on the links for more information.
                         <br />
+                        <hr>
                         <div class='logoimg'>
-                            <a href='//www.sdss.org'><img src='img/sdss.png' alt='SDSS Logo' class='leftlogo'/></a>
+                            <a href='//www.sdss.org'><img src='img/sdss.png' alt='SDSS Logo'></a><br> 
+                        </div>
+
+                             <!-- class='leftlogo'/></a><br /> -->
+                        <div class='logoimg_planck'>
                             <a href='//www.esa.int/Our_Activities/Space_Science/Planck/Planck_and_the_cosmic_microwave_background'><img src='img/planck.png' alt='PLANCK logo' /></a>
                         </div>
+                        <div class='jhulogoimg'><img src='img/jhu.png' /></div>
+                        
+                        </p>
                         <!-- <br />SDSS: Spectroscopic Galaxies and Quasars -->
                     </li>
                 </ul>
             </li>
         
         
-            <li class="infoheader col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-4 col-lg-3">
-                <h3>Did you enjoy this journey?</h3>
+            <li class="infoheader col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-3 col-lg-3">
+                <h3>Did you enjoy it?</h3>
                 <!-- <p>Support exploring the structure of the universe...</p> -->
                 <ul class="infoexpand">
                     <li>Please leave any comments or suggestions <a href="">here.</a></li>
@@ -258,12 +268,13 @@
             </li>
         
 
-            <li class="infoheader col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-4 col-lg-3">
+            <li class="infoheader col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-3 col-lg-3">
                 <h3>Want to use this movie?</h3>
                 <!-- <p>Want to use this movie in a classroom, presentation, or planetarium...</p> -->
                 <ul class="infoexpand">
-                    <li>For presentations &amp; educational purposes, you can download and freely use classroom ready<a href="temp.keynote"> slides</a> and show the movie from <a href="//www.youtube.com/watch?v=jSe6GOmkq_c">youTube</a>.</li>
-                    <li>For planetariums and commercial use <a href="mailto:ajmendez@jhu.edu">email us for licensing.</a></li>
+                    <li><p align='left'>
+                    For educational purposes you can download and freely use classroom ready<a href="temp.keynote"> slides</a> and show the <a href="//www.youtube.com/watch?v=jSe6GOmkq_c">youTube</a> movie.</p></li>
+                    <li><p align='left'>For planetariums and commercial use <a href="mailto:ajmendez@jhu.edu">email us for licensing.</a></p></li>
                 </ul>
             </li>
            
@@ -294,7 +305,7 @@
 </footer>
 
 
-
+<!-- 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -305,7 +316,7 @@
   ga('send', 'pageview');
 
 </script>
-
+-->
 
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -316,8 +327,7 @@
 <!-- <script src="js/particles.js"></script> -->
 <!-- <script src="js/particles-animation.js"></script> -->
 <script src="js/nivo-lightbox.js"></script>
-<!-- <script src="js/css3-animate-it.js"></script> -->
-
+<script src="js/css3-animate-it.js"></script>
 <script src="js/main.js"></script>
 
 
