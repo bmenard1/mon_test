@@ -580,6 +580,12 @@ cursor: pointer;
     padding-right: 20px;
 }
 
+.jhulogoimg {
+    text-align:center;
+    padding-bottom: 10px;
+    width: 3%; 
+}
+
 .logoimg {
     text-align:center;
     padding-bottom: 10px;
