@@ -487,8 +487,8 @@ footer p {
 .coneimg {
 /*    position: absolute;*/
 	position:relative;
-    left: 7%;
-    width: 86%;
+    left: 5%;
+    width: 90%;
 /*    content: url('../img/sdss_cone_notext.png');*/
 }
 
@@ -588,17 +588,26 @@ cursor: pointer;
 }
 
 .jhulogoimg {
-    text-align:center;
+    text-align:right;
     padding-bottom: 10px;
     width: 3%; 
 }
 
 .logoimg {
-    text-align:center;
+    text-align:left;
     padding-bottom: 10px;
 }
 
+.logoimg_right {
+    text-align:right;
+    padding-bottom: 10px;
+}
 
+.logoimg_planck {
+    text-align:left;
+    width: 200%;
+    padding-bottom: 10px;
+}
 
 
 #about {
