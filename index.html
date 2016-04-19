@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <!-- <meta http-equiv="refresh" content="120"> -->
     
-    <title>Deep into the Sky</title>
+    <title>Into the Distant Sky</title>
 	
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
@@ -17,8 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css" />
 	<link rel="stylesheet" type="text/css" href="css/nivo-lightbox-theme/default/default.css" />
     <link rel="stylesheet" type="text/css" href="css/nivo-lightbox.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/animate.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/animations.css" /> -->
+     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
 </head>
@@ -32,16 +31,17 @@
 <section class="hero" id="intro">
 <div class='hero-align'><div class='hero-content'>
 <div class="container">
+    <div id="particles"><canvas class="particles-canvas" style="width: 100%; height: 100%;"></canvas></div>
     <div class="row">
         <div class="text-center">
-            <div class="animatedParent animateOnce">
-                <p id="title" class='animated fadeInDown slow'>Deep into the Sky</p>
-                <h1 class="animated zoomIn slow delay-1000">
-                    <a id="movie" href="https://www.youtube.com/watch?v=Pbd2cUskwBg&amp;autoplay=1&amp;rel=0&amp;modestbranding=1&amp;showinfo=0&amp;cc_load_policy=1&amp;cc=1&amp;hl=en&amp;cc_lang_pref=en">
+            <div class="animatedParent">
+                <h1 class="animated fadeInDown">
+                    <a id="movie" href="https://youtu.be/4Ew4_fW5dng&amp;autoplay=1&amp;rel=0&amp;modestbranding=1&amp;showinfo=0&amp;cc_load_policy=1&amp;cc=1&amp;hl=en&amp;cc_lang_pref=en">
                         <img src="img/play.png" id="youtube">
                     </a>
                 </h1>
-            <p id='subtitle'  class="animated fadeInUp slower">See the night sky beyond the limit of your eyes...</p>
+                <p id="title" class="animated fadeInUp">Into The Distant Sky</p>
+                <p id='subtitle'  class="animated fadeInUp">See the night sky beyond the limits of your eyes...</p>
             </div>
         </div>
     </div>
@@ -60,12 +60,14 @@
             <span class="sr-only">Toggle navigation</span>
             <i id='navicon' class="fa fa-chevron-up fa-chevron-down"></i>
         </button>
-        <a class="navbar-brand" href="#intro">Deep into the Sky: the movie</a>
+        <p class="navbar-brand"><i class='fa fa-chevron-down'></i> Scroll to learn about the movie.</p>
+        <!-- <a class="navbar-brand" href="#intro">Into the Distant Sky</a> -->
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-            <li><a href="#about">Description</a></li>
-            <li><a href="#cone">Visualizing the Universe</a></li>
+            <!-- <li><a href="#intro">The Movie</a></li> -->
+            <li><a href="#about">Slideshow</a></li>
+            <li><a href="#cone">A map of Universe</a></li>
             <li><a href="#information">Credits</a></li>
         </ul>
     </div>
@@ -74,34 +76,27 @@
 <!-- /Navigation -->  
 
 
-
-<br>
-<br>
-<br>
-<br>
-
-
 <section id="about">
 <div class='row'>
     <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6'>
-        <div class='animatedParent animateOnce'>
-            <h2 class='animated bounceInLeft'>Description</h2>
-        </div>
-        <p align="justify">
-        The movie shows many layers of the sky, as if we were flipping through the pages of a book. Now let's pause at the main chapters and take the time to look at some fascinating pictures. The slideshow below will take you all the way to the Big Bang. Click the right arrow or swipe to start.</p>
+        <h2>Slideshow</h2>
+        <p>
+            The movie shows many layers of the distant sky, as if we were flipping through the pages of a book. Now let's pause at the main chapters to learn more about the fascinating pictures. The slideshow below starts with the familiar night sky and takes you all the way to the Big Bang. Click the right arrow or swipe to start.
+<!-- 			The movie shows a "flipbook" of the sky -- individual slices of time going back in time. 
+			Lets dig into the main chapters of this book of the universe to learn more about the structures. 
+			The slideshow below will start with the night sky that you are familiar with and take you back to the Big Bang. 
+			Click the right arrow or swipe to start.
+ -->		</p>
         </div>
     </div>
 </div>
     
-
-
-
 <div class="owl-carousel owl-theme">
     <div class='item'>
-        <img src="img/frames/01_citystars.jpg" />
-        <p class='leftarrow'></p>
-        <p class='rightarrow'>Towards the Big Bang</p>
-    
+        <!-- <img src="img/frames/01_citystars.jpg" /> -->
+        <img src="img/frames/test_01.jpg" />
+        <p class='leftarrow'>Closer to us</p>
+        <p class='rightarrow'>Farther away</p>    
     </div>
     <div class='item'><img src="img/frames/02_countrystars.jpg" /></div>
     <div class='item'><img src="img/frames/03_galaxies.jpg" /></div>
@@ -111,108 +106,63 @@
     <div class='item'><img src="img/frames/07_redshift.jpg" /></div>
     <div class='item'><img src="img/frames/08_quasars.jpg" /></div>
     <div class='item'><img src="img/frames/09_redquasars.jpg" /></div>
-    <div class='item'><img src="img/frames/10_dark.jpg" /></div>
+    <div class='item'><img src="img/frames/10_dark.jpg" /></div>	
     <div class='item'><img src="img/frames/11_cmb.jpg" /></div>
 </div>
 </section>
 
 
-<br>
-<br>
-<br>
-<br>
+
+
+
 
 
 <section id="cone">
 <div class='row'>
     <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6'>
-        <div class='animatedParent animateOnce'>
-            <h2 class='animated bounceInLeft'>Visualizing the Universe</h2>
-        </div>
-    </div>
-</div>
-
-<div class='container'>
-        <div class='col-xs-12 col-sm-12 col-md-12 conediv'>
-            
-            <a class='conebox' href="img/sdss_cone_notext.png" title='A slice of the observable Universe'>
-                <img class='coneimg' src='img/sdss_cone_notext.png'>
-                <!-- src="img/SDSS_cone_text.png" -->
-            </a>
-        </div>
- </div>
-
-<br>
-<br>
-
-<div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6'>
-    <p align="justify">This is a slice of the Universe. We are located at the bottom. The top shows the edge of the observable Universe where the first flash of light, the cosmic microwave background, was emitted 13.7 billion years ago. In between, astronomers have detected millions of galaxies.
-    </p>
-</div>
-
-<!-- Notes:
-JP:
-- we can use the pie chart to show both time and distance axes
-distance and look back time linked. Give numbers for stars and nearby galaxies.
-
-Shirley:
-fade the bounding box. Gray.
-keep the mountains to keep the human connection. nice connection.
-have the galaxies appear very slowly on top of the stars.
-
-Pascal:
-title and authors at the beginning of the movie
-shorten the stars. Not enough action.
-speed up quasars
--->
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-<div class='row'>
-    <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6'>
-        <p align="justify">The view below shows another type of cut through the observable Universe. Scroll to the right to go all the way back to the time of the Big Bang.
+        <h2>A map of the Universe </h2>
+        <p>This is a map showing the millions of objects observed by astronomers.
+        <!-- slice of the Universe.  -->
+        We are located at the bottom. The top shows the edge of the observable Universe where the first flash of light, the cosmic microwave background, was emitted 13.7 billion years ago. In between, astronomers have detected millions of galaxies and quasars.
+        </p>
+        <p>
+        Click on the image for more Information.
         </p>
         </div>
     </div>
 </div>
-
-
-
-
-<div class="container">
+    
+<div class='container'>
     <div class='row'>
-       <div id="scroller" style="width: 90%; height: 300px; margin:0 auto;">
-            <p align="right">&rarr;</p>
-            <div class="innerScrollArea"> 
-<!--            <ul> -->
-                <!-- Define photos here -->
-                <li><img src="img/background_large_BM.jpg" height="400"></li>
-<!--            </ul>-->
-            </div>
+        <div class='col-xs-12 col-sm-12 col-md-12 conediv'>
+            <img class='hovercone' src='img/sdss_cone_notext.png'>
         </div>
     </div>
 </div>
-</section>
 
 
 
-<br>
-<br>
-<br>
-<br>
+
+
 
 
 
 
 <section id="information">
-<div class='infolinks'>
+<div class='row'>
+    <div class='col-xs-12'>
+    <div class='col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10  col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8'>
+        <h2>Credits &amp; Contact Information </h2>
+        <p>
+            If you have comments or questions about the movie please feel free to leave them in this <a href="">form</a>.
+        </p>
+        </div>
+    </div>
+    <div class='infolinks'>
+        <ul class='row'>
+        
+		
+		<div class='infolinks'>
         <ul class='row'>
 
             <!-- <li class="infoheader col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-4 col-lg-offset-15 col-lg-3"> -->
@@ -221,31 +171,38 @@ speed up quasars
                 <ul class="infoexpand">
                     <li><p align='justify'>
                         This visualization was created by
-                        <a href='//ajmendez.github.io'>Alexander Mendez</a> and <a href='//www.pha.jhu.edu/~menard/'>Brice Ménard</a>, astrophysicists at <a href='//www.pha.jhu.edu/'>Johns Hopkins University.</a>
-                        
+                        <a href='//ajmendez.github.io'>Alexander Mendez</a> and <a href='//www.pha.jhu.edu/~menard/'>Brice Ménard</a>. 
                     </p>
                     </li>
                 
                     <li><p align='justify'>
                         Data for galaxies and quasars are from the <a href="//www.sdss.org">Sloan Digital Sky Survey (SDSS)</a>. 
                         The cosmic microwave background image was obtained by the <a href='//www.esa.int/Our_Activities/Space_Science/Planck/Planck_and_the_cosmic_microwave_background'>Planck satellite</a>. 
-                        <br>
-                        <br />Click on the logos for more information.
+                        Click on the logos for more information.
                         <br />
-                        <hr>
+                        <!-- <hr> -->
                         <div class='logoimg'>
-                            <a href='//www.sdss.org'><img src='img/sdss.png' alt='SDSS Logo'></a><br> 
-                        </div>
-
+                            <a href='//www.sdss.org'><img src='img/sdss.png' alt='SDSS Logo'></a>&nbsp;&nbsp;
+                            <!-- <br>  -->
+                        <!-- </div> -->
                              <!-- class='leftlogo'/></a><br /> -->
-                        <div class='logoimg_planck'>
+                        <!-- <div class='logoimg_planck'> -->
                             <a href='//www.esa.int/Our_Activities/Space_Science/Planck/Planck_and_the_cosmic_microwave_background'><img src='img/planck.png' alt='PLANCK logo' /></a>
-                        </div>
-                        <div class='jhulogoimg'><img src='img/jhu.png' /></div>
-                        
+                        </div>                        
                         </p>
-                        <!-- <br />SDSS: Spectroscopic Galaxies and Quasars -->
                     </li>
+
+
+                    <li><p align='justify'>
+                        Support was provided by <a href="//pha.jhu.edu">Johns Hopkins University</a> and
+                        the <a href="//nsf.gov">National Science Fundation</a>. <!--Click on the logos for more information. -->
+                        <!-- <hr> -->
+                        <div class='jhulogoimg'><a href='//jhu.edu'><img src='img/jhu.png' /></a> &nbsp;&nbsp;<!--</div>-->
+                        <!-- <div class='jhulogoimg'> -->
+                        <a href='//nsf.gov'><img src='img/logo_nsf.png' /></a></div>                        
+                        </p>
+                    </li>                        
+
                 </ul>
             </li>
         
@@ -257,7 +214,7 @@ speed up quasars
                     <li><p align='left'>
                     Please leave any comments or suggestions on our <a href="">feedback form.</a></p></li>
                     <!-- <li>You can say thank you by donating the cost of a coffee <a href='//www.patreon.com/bePatron?patAmt=3.50&u=2831865'>here</a> to continue our quest for great scientific visualizations.</li> -->
-                    <li>Inspired and want to support astrophysics research and outreach? <a href="mailto:ajmendez@jhu.edu">Contact us!</a> Private funding allows us to do the most original projects.</a>
+                    <li>Inspired? Support astrophysics research and visualization! <a href="mailto:ajmendez@jhu.edu">Contact us.</a> Private funding allows us to do the most original projects.</a>
                 </ul>
             </li>
         
@@ -277,6 +234,8 @@ speed up quasars
         </ul>
     </div>
 </div>
+
+
 </section>
 
 
@@ -297,18 +256,16 @@ speed up quasars
 </footer>
 
 
-<!-- 
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-22320868-6', 'auto');
   ga('send', 'pageview');
-
 </script>
--->
+
 
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -319,79 +276,9 @@ speed up quasars
 <!-- <script src="js/particles.js"></script> -->
 <!-- <script src="js/particles-animation.js"></script> -->
 <script src="js/nivo-lightbox.js"></script>
-<script src="js/css3-animate-it.js"></script>
+<!-- <script src="js/css3-animate-it.js"></script> -->
+
 <script src="js/main.js"></script>
-
-
-
-<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-// <script type="text/javascript">
-    $(function(){
-        var scroller = $('#scroller div.innerScrollArea');
-        var scrollerContent = scroller.children('ul');
-        scrollerContent.children().clone().appendTo(scrollerContent);
-        var curX = 0;
-        scrollerContent.children().each(function(){
-            var $this = $(this);
-            $this.css('left', curX);
-            curX += $this.outerWidth(true);
-        });
-        var fullW = curX / 2;
-        var viewportW = scroller.width();
-
-        // Scrolling speed management
-        var controller = {curSpeed:0, fullSpeed:3};
-        var $controller = $(controller);
-        var tweenToNewSpeed = function(newSpeed, duration)
-        {
-            if (duration === undefined)
-                duration = 10;
-            $controller.stop(true).animate({curSpeed:newSpeed}, duration);
-        };
-
-        // Pause on hover
-        scroller.hover(function(){
-            tweenToNewSpeed(controller.fullSpeed);
-        }, function(){
-            tweenToNewSpeed(0);
-        });
-
-        // Scrolling management; start the automatical scrolling
-        var doScroll = function()
-        {
-            var curX = scroller.scrollLeft();
-            var newX = curX + controller.curSpeed;
-            if (newX > fullW*2 - viewportW)
-                newX -= fullW;
-            scroller.scrollLeft(newX);
-        };
-        setInterval(doScroll, 20);
-        tweenToNewSpeed(controller.fullSpeed);
-    });
-// </script>
--->
-
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-<script type="text/javascript">
-    $(function(){
-        var scroller = $('#scroller div.innerScrollArea');
-        var scrollerContent = scroller.children('ul');
-        scrollerContent.children().clone().appendTo(scrollerContent);
-        var curX = 0;
-        scrollerContent.children().each(function(){
-            var $this = $(this);
-            $this.css('left', curX);
-            curX += $this.outerWidth(true);
-        });
-        var fullW = curX / 2;
-        var viewportW = scroller.width();
-
-        scroller.css('overflow-x', 'auto');
-    });
-</script>
-
-
     
 </body>
 
