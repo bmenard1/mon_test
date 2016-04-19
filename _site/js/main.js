@@ -1,6 +1,6 @@
 /*global jQuery:false */
 (function ($) {
-	$(window).load(function(){
+    $(window).load(function(){
       $("#navigation").sticky({ topSpacing: 50 });
     });
     
@@ -11,23 +11,29 @@
     // $('.image-wrapper img').css('height', h-100+'px');
     
 
-	$('ul.nav li.dropdown').hover(function() {
-	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-	}, function() {
-	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-	});	
+    $('ul.nav li.dropdown').hover(function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+    }, function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+    }); 
 
-	//jQuery to collapse the navbar on scroll
-	$(window).scroll(function() {
-		if ($(".navbar").offset().top > 0) {
-			$(".navbar-fixed-top").addClass("top-nav-collapse");
-		} else {
-			$(".navbar-fixed-top").removeClass("top-nav-collapse");
-		}
-	});
+    //jQuery to collapse the navbar on scroll
+    $(window).scroll(function() {
+        if ($(".navbar").offset().top > 0) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        } else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+        if ($(this).scrollTop() >= h) {
+            $('.navbar-brand').html('<a href="#intro">Into The Distant Sky</a');
+        } else {
+            $('.navbar-brand').html('<i class="fa fa-chevron-down"></i> Scroll to learn about the movie.');
+        };
+            
+    });
     
     
-	$('#movie').nivoLightbox({
+    $('#movie').nivoLightbox({
     effect: 'fadeScale',
     theme: 'default',
     keyboardNav: true,
@@ -45,7 +51,7 @@
     
     
     
-	$('.conebox').nivoLightbox({
+    $('.conebox').nivoLightbox({
     effect: 'fadeScale',
     theme: 'default',
     keyboardNav: true,
@@ -56,12 +62,13 @@
     
     
     var owl = $('.owl-carousel');
-    var dots = (w > 500);
+    var dots = (w > 650);
     owl.owlCarousel({
         loop:false,
         nav:true,
         // navText:['<i class="fa fa-2x fa-arrow-circle-left"></i>','<i class="fa fa-2x  fa-arrow-circle-right"></i>'],
-        navText:['<i class="fa fa-5x fa-chevron-left"></i>','<i class="fa fa-5x  fa-chevron-right"></i>'],
+        navText:['<i class="fa fa-5x fa-chevron-left"></i><br />Go towards today',
+                 '<i class="fa fa-5x fa-chevron-right"></i><br>Go towards the big bang'],
         
         smartSpeed: 600,
         fluidSpeed: 100,
@@ -129,13 +136,27 @@
         $(this).parent().find('ul').slideToggle();
     });
     
+    // var clickflag = false;
+    $('img.hovercone').bind("click touchstart", function (e) {
+        'use strict'; //satisfy code inspectors
+        // if (!clickflag) {
+        //     clickflag=true;
+        //     setTimeout(function(){clickflag=false;}, 100);
+        // };
+        var link = $(this); //preselect the link
+        if (link.hasClass('hover')) {
+            link.removeClass('hover');
+            return true;
+        } else {
+            link.addClass('hover');
+            $('img.hovercone').not(this).removeClass('hover');
+            e.preventDefault();
+            return false; //extra, and to make sure the function has consistent return points
+        }
+    });
+    
+    
     
 })(jQuery);
-
-
-
-
-
-
 
 
